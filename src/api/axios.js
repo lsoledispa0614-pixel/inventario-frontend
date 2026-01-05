@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://inventario-backend-s1nh.onrender.com",
 });
 
 // agrega token automáticamente si existe
@@ -12,3 +12,4 @@ api.interceptors.request.use((config) => {
 });
 
 export default api;
+
